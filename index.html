@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Timur Zinnatullin - Portfolio</title>
+	<link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+	<div class="container">
+
+		<!-- Header -->
+		<header>
+			<input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="nav-i" for="side-menu"><i class="bi bi-three-dots"></i></label>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<button id="themeToggle"><i class="bi bi-moon-stars-fill"></i></button>
+		</header>
+
+		<!-- Main section -->
+		<main>
+
+			<!-- "About" section -->
+			<section id="about" class="about-section">
+				<img src="./images/about.jpg" alt="Timur Zinnatullin" class="about-img" />
+				<div class="about-text">
+					<h1>Hey, I'm Tim <span class="wave">👋</span></h1>
+					<p class="text-color-lighter">
+						I'm a front-end developer passionate about creating engaging and
+						dynamic user experiences!
+					</p>
+				</div>
+			</section>
+
+			<!-- "Experience" section -->
+			<section id="experience">
+				<h2>#Experience (Timeline)</h2>
+				<ul class="experience">
+					<li>
+						<span style="white-space: nowrap"><i class="bi bi-calendar-heart"></i><strong>2024</strong></span>
+						<span class="text-color-lighter">/* CTD student)) */</span>
+					</li>
+					<li>
+						<span style="white-space: nowrap"><i class="bi bi-calendar-event"></i><strong>2023</strong></span>
+						<span class="text-color-lighter">
+							/* Moved to United States */</span>
+					</li>
+					<li>
+						<span style="white-space: nowrap"><i class="bi bi-calendar-event"></i><strong>2013</strong></span>
+						<span class="text-color-lighter">/* Freelancer in the field of internet and affiliate
+							marketing */</span>
+					</li>
+					<li>
+						<span style="white-space: nowrap"><i class="bi bi-calendar-event"></i><strong>2007</strong></span>
+						<span class="text-color-lighter">/* Front-End Developer */</span>
+					</li>
+					<li>
+						<span style="white-space: nowrap"><i class="bi bi-calendar-event"></i><strong>2007</strong></span>
+						<span class="text-color-lighter">
+							/* Graduated from Kazan University with an bachelor's degree
+							*/</span>
+					</li>
+					<li>
+						<span style="white-space: nowrap"><i class="bi bi-calendar-event"></i><strong>1985</strong></span>
+						<span class="text-color-lighter">/* Born and raised in Kazan, Russia */</span>
+					</li>
+				</ul>
+			</section>
+
+			<!-- "Skills" section -->
+			<section id="skills">
+				<h2>#Skills</h2>
+				<!-- List of my skills will be displayed using JS -->
+			</section>
+
+			<!-- "Projects" section -->
+			<section id="projects">
+				<h2>#Projects</h2>
+				<ul class="projects-container">
+					<!-- List of my GitHub projects will be displayed using JS -->
+				</ul>
+			</section>
+
+			<!-- "Leave a Message" section -->
+			<section id="contact">
+				<h2>#Leave a Message</h2>
+				<form id="message-form">
+					<div class="message-form-container">
+						<div class="message-form-item">
+							<label for="name">Name:</label>
+							<input type="text" id="name" required />
+						</div>
+						<div class="message-form-item">
+							<label for="email">Email:</label>
+							<input type="email" id="email" required />
+						</div>
+						<div class="message-form-item">
+							<label for="message">Your Message:</label>
+							<textarea id="message" required></textarea>
+						</div>
+						<div class="message-form-item">
+							<button type="submit" class="btn">
+								Submit<i class="bi bi-arrow-right-short"></i>
+							</button>
+							<button type="button" id="cancelButton" class="text-color-lighter">
+								Cancel
+							</button>
+						</div>
+					</div>
+				</form>
+			</section>
+
+			<!-- "Messages" section. Hidden if there are no messages -->
+			<section id="messages" style="display: none">
+				<h2>#Messages</h2>
+				<ul id="messages-list"></ul>
+			</section>
+
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="text-color-lighter">
+				&copy; Timur Zinnatullin
+				<script>
+					document.write(new Date().getFullYear());
+				</script>
+			</div>
+			<div class="footer-icons">
+				<a href="https://www.linkedin.com/in/tims139" target="_blank"><i class="bi bi-linkedin"></i></a>
+				<a href="https://github.com/tims139/" target="_blank"><i class="bi bi-github"></i></a>
+				<a href="https://www.facebook.com/tims139/" target="_blank"><i class="bi bi-facebook"></i></a>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
